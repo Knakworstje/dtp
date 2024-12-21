@@ -18,7 +18,7 @@
 
 The Distributed Timestream Protocol (DTP) and Secure Distributed Timestream Protocol (SDTP) are designed to efficiently retrieve and aggregate time-series data from distributed data sources. The protocols enable clients to query and merge data streams from multiple servers based on UNIX timestamps, providing a unified and seamless data retrieval mechanism.
 
-SDTP extends DTP by adding TLS encryption and authentication capabilities, ensuring secure communication and data integrity.
+SDTP extends DTP by adding encryption and authentication capabilities, ensuring secure communication and data integrity.
 SDTP uses ECDSA (Elliptic Curve Digital Signature Algorithm) together with the elliptic curve secp256r1 (also known as prime256v1) to establish a secure method of communication between the client and SDTP server.
 
 secp256r1 is an elliptic curve used in cryptography, also known as prime256v1, and it is a widely accepted standard for secure communication. It provides strong security with relatively low computational overhead, making it suitable for use in modern protocols.
@@ -72,7 +72,7 @@ secp256r1 is an elliptic curve used in cryptography, also known as prime256v1, a
 
 ### SDTP (Secure Distributed Timestream Protocol):
 
-1. **Encryption:** All communication is encrypted using TLS.
+1. **Encryption:** All communication is encrypted using ECDSA.
 2. **Authentication:** The client must present a valid authentication key or token to access data.
 
 ## Security Considerations
@@ -84,7 +84,7 @@ secp256r1 is an elliptic curve used in cryptography, also known as prime256v1, a
 
 - **SDTP:**
 
-  - Uses TLS for encryption and mutual authentication.
+  - Uses ECDSA for encryption and mutual authentication.
   - Prevents data tampering and eavesdropping.
 
 ## Chart
