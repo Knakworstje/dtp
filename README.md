@@ -86,4 +86,4 @@ Permanent registration.
 
 ## References
 
-- Github Repository: [text](https://github.com/Knakworstje/dtp)
+- Github Repository: [Repository](https://github.com/Knakworstje/dtp)
