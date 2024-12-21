@@ -45,6 +45,19 @@ SDTP extends DTP by adding TLS encryption and authentication capabilities, ensur
 - `dtp://data.example.com/764317344/1189253299`
 - `sdtp://secure-data.example.com/764317344/1189253299`
 
+### Status Codes:
+-1xx
+    -100 Success
+-2xx
+   -200 Internal Error
+   -201 Service Unavailable
+-3xx
+   -300 Invalid Range
+   -301 Authentication Failed
+   -302 Invalid URI
+   -303 Forbidden
+   -304 SDTP Required
+
 ## Protocol Description
 
 ### DTP (Distributed Timestream Protocol):
