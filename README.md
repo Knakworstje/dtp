@@ -71,7 +71,7 @@ SDTP extends DTP by adding TLS encryption and authentication capabilities, ensur
   - Prevents data tampering and eavesdropping.
 
 ## Chart
-[image](https://github.com/Knakworstje/dtp/blob/main/chart.png)
+![image](https://github.com/Knakworstje/dtp/blob/main/chart.png)
 
 ## Registration Details
 
