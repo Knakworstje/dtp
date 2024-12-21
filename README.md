@@ -48,6 +48,7 @@ SDTP extends DTP by adding TLS encryption and authentication capabilities, ensur
 ### Status Codes:
 -1xx
     -100 Success
+    -101 Blacklisted
 -2xx
    -200 Internal Error
    -201 Service Unavailable
