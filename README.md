@@ -4,8 +4,8 @@
 
 ### Scheme Names:
 
-- `dtp` (Distributed Timestream Protocol)
-- `sdtp` (Secure Distributed Timestream Protocol)
+- `dtp` (Distributed Timeseries Protocol)
+- `sdtp` (Secure Distributed Timeseries Protocol)
 
 ### Contact Information:
 
@@ -16,7 +16,7 @@
 
 ### Purpose of the Protocols:
 
-The Distributed Timestream Protocol (DTP) and Secure Distributed Timestream Protocol (SDTP) are designed to efficiently retrieve and aggregate time-series data from distributed data sources. The protocols enable clients to query and merge data streams from multiple servers based on UNIX timestamps, providing a unified and seamless data retrieval mechanism.
+The Distributed Timeseries Protocol (DTP) and Secure Distributed Timeseries Protocol (SDTP) are designed to efficiently retrieve and aggregate time-series data from distributed data sources. The protocols enable clients to query and merge data streams from multiple servers based on UNIX timestamps, providing a unified and seamless data retrieval mechanism.
 
 SDTP extends DTP by adding encryption and authentication capabilities, ensuring secure communication and data integrity.
 SDTP uses ECDSA (Elliptic Curve Digital Signature Algorithm) together with the elliptic curve secp256r1 (also known as prime256v1) to establish a secure method of communication between the client and SDTP server.
@@ -64,13 +64,13 @@ secp256r1 is an elliptic curve used in cryptography, also known as prime256v1, a
 
 ## Protocol Description
 
-### DTP (Distributed Timestream Protocol):
+### DTP (Distributed Timeseries Protocol):
 
 1. **Client Request:** The client sends a request to the server, specifying a time range (from-timestamp to to-timestamp).
 2. **Server Response:** The server returns a list of data source URIs (e.g., database nodes) containing relevant data.
 3. **Data Retrieval:** The client queries the listed data sources in parallel, retrieves the data, and merges it locally.
 
-### SDTP (Secure Distributed Timestream Protocol):
+### SDTP (Secure Distributed Timeseries Protocol):
 
 1. **Encryption:** All communication is encrypted using ECDSA.
 2. **Authentication:** The client must present a valid authentication key or token to access data.
