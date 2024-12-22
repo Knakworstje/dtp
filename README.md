@@ -49,18 +49,18 @@ secp256r1 is an elliptic curve used in cryptography, also known as prime256v1, a
 - `sdtp://secure-data.example.com/764317344/1189253299`
 
 ### Status Codes:
--1xx
-    -100 Success
-    -101 Blacklisted
--2xx
-   -200 Internal Error
-   -201 Service Unavailable
--3xx
-   -300 Invalid Range
-   -301 Authentication Failed
-   -302 Invalid URI
-   -303 Forbidden
-   -304 SDTP Required
+- 1xx
+    - 100 Success
+    - 101 Blacklisted
+- 2xx
+   - 200 Internal Error
+   - 201 Service Unavailable
+- 3xx
+   - 300 Invalid Range
+   - 301 Authentication Failed
+   - 302 Invalid URI
+   - 303 Forbidden
+   - 304 SDTP Required
 
 ## Protocol Description
 
