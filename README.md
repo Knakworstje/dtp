@@ -61,6 +61,7 @@ secp256r1 is an elliptic curve used in cryptography, also known as prime256v1, a
    - 302 Invalid URI
    - 303 Forbidden
    - 304 SDTP Required
+   - 305 Invalid Session ID
 
 ## Protocol Description
 
