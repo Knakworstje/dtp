@@ -65,15 +65,19 @@ secp256r1 is an elliptic curve used in cryptography, also known as prime256v1, a
 ## Protocol Description
 
 ### DTP (Distributed Timeseries Protocol):
-
 1. **Client Request:** The client sends a request to the server, specifying a time range (from-timestamp to to-timestamp).
 2. **Server Response:** The server returns a list of data source URIs (e.g., database nodes) containing relevant data.
 3. **Data Retrieval:** The client queries the listed data sources in parallel, retrieves the data, and merges it locally.
 
 ### SDTP (Secure Distributed Timeseries Protocol):
 
-1. **Encryption:** All communication is encrypted using ECDSA.
-2. **Authentication:** The client must present a valid authentication key or token to access data.
+1. **Session Initialisation:** The client sends a request to the server containing their ECDSA public key.
+2. **Server Inititialisation Response:** The server receives the request and sends back their ECDSA public key together with a generated session id and stores these as a key-value pair.
+3. **Client Request:** The client sends an encrypted request to the server using the server's private key, specifying a time range (from-timestamp to to-timestamp) and the client attaches their session ID and a signature.
+4. **Server Response:** The server verifies the signature and returns a list of data source URIs (e.g., database nodes) containing relevant data.
+5. **Client Termination:** The client sends a STER (Session Termination) request with their session key and a signature attached.
+6. **Server Termination:** The server verifies the signature and, upon success, removes the key-value pair containing the session ID and client's public key from memory.
+7. **Data Retrieval:** The client queries the listed data sources in parallel, retrieves the data, and merges it locally.
 
 ## Security Considerations
 
