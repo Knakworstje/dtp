@@ -7,11 +7,6 @@
 - `dtp` (Distributed Timeseries Protocol)
 - `sdtp` (Secure Distributed Timeseries Protocol)
 
-### Contact Information:
-
-- **Name:** Daan Alexander Verhulst
-- **Email:** daanverhulst2010@gmail.com
-
 ## Introduction
 
 ### Purpose of the Protocols:
